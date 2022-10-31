@@ -1,0 +1,12 @@
+{% extends "MyPage/base.html" %}
+{% block title %}
+    Book Details
+{% endblock %}
+
+{% block content%}
+    <ul>
+        {% for book in Books%}
+             <li> Title: {{book.title}}, Author: {{book.author}}, Rating: {{book.rating}}, Author_Nationality: {{book.author_nationality}} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
